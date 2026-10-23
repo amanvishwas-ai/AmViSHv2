@@ -25,6 +25,7 @@ The transcribed text is sent to Groq for inference. Audio capture and Whisper tr
 - `firmware/ESP32_main/` — an alternate status/discovery sketch. It does **not** implement `/ACT`; it is not the action bridge required by the laptop program.
 - `hardware/amvish-2.0-connections.xlsx` — supplied wiring reference.
 - `hardware/PINOUT.md` — readable pin summary and known differences between the wiring sheet and the current firmware.
+- `thesis/main.tex` — rewritten, source-based thesis describing the implementation, its limitations, and a verification plan. It compiles with the project LaTeX editor; the previous submitted PDF is retained as `Thesis-original.pdf` for reference.
 
 ## Hardware
 
@@ -98,6 +99,8 @@ Edit `laptop/config.py` for sample rate, chunk duration, audio energy thresholds
 The language model’s allowed action set is in `laptop/brain_llm.py`. The Arduino firmware implements the action names it recognizes; unknown actions fall back to idle. Keep the prompt’s action list and the Arduino parser aligned when extending the robot.
 
 ## Known limitations
+
+The thesis is based on the checked-in code and does not claim unmeasured performance. It also documents gaps between the earlier thesis narrative and the current implementation.
 
 - This is experimental firmware. It has no safety-rated obstacle avoidance, authentication, encryption, or guaranteed motor-command timeout.
 - The ESP32 `/ACT` HTTP endpoint is unauthenticated. Use only on a trusted private LAN; do not port-forward or expose it to the public internet.
