@@ -1,0 +1,10 @@
+# Runtime and firmware configuration. Install PyTorch separately if you need a
+# specific CUDA build for your GPU; the default package may be CPU-only.
+numpy
+sounddevice
+openai-whisper
+torch
+groq
+pyttsx3
+requests
+python-dotenv

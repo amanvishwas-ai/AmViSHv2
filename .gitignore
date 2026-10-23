@@ -1,0 +1,8 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+firmware/**/secrets.h
+.DS_Store
+Thumbs.db
