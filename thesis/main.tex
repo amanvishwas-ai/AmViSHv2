@@ -65,6 +65,10 @@ AmViSH 2.0 is a prototype voice-interaction system joining local audio capture a
 \appendix\chapter{Command protocol}
 The host posts JSON such as \texttt{\{"act":"TURN\_LEFT"\}} to \texttt{/ACT}. The ESP32 forwards a newline-terminated \texttt{ACT:TURN\_LEFT} message. Arduino accepts the \texttt{ACT:} prefix and maps recognized strings. Message identifiers, action duration, authentication, and acknowledgments are recommendations, not implemented fields.
 \chapter{Files reviewed}
-Laptop: \texttt{main.py}, \texttt{config.py}, \texttt{audio\_listener.py}, \texttt{stt\_whisper.py}, \texttt{brain\_llm.py}, \texttt{tts\_engine.py}, \texttt{reverse\_discovery.py}. Firmware: \texttt{esp32\_cam\_act\_bridge.ino}, \texttt{ESP32\_main.ino}, \texttt{ARDUINO\_CODE.ino}. Supporting sources: README, requirements, pinout, workbook, previous Thesis.pdf.
-\begin{thebibliography}{9}\bibitem{radford} A. Radford et al., ``Robust Speech Recognition via Large-Scale Weak Supervision,'' arXiv:2212.04356, 2022. \url{https://arxiv.org/abs/2212.04356}.\bibitem{kim} Y. Kim et al., ``A Survey on Integration of Large Language Models with Intelligent Robots,'' arXiv:2404.09228, 2024. \url{https://arxiv.org/abs/2404.09228}.\bibitem{ma} Y. Ma, Z. Song, Y. Zhuang, J. Hao, and I. King, ``A Survey on Vision-Language-Action Models for Embodied AI,'' arXiv:2405.14093, 2024. \url{https://arxiv.org/abs/2405.14093}.\end{thebibliography}
+Laptop: \texttt{main.py}, \texttt{config.py}, \texttt{audio\_listener.py}, \texttt{stt\_whisper.py}, \texttt{brain\_llm.py}, \texttt{tts\_engine.py}, \texttt{reverse\_discovery.py}. Firmware: \texttt{esp32\_cam\_act\_bridge.ino}, \texttt{ESP32\_main.ino}, \texttt{ARDUINO\_CODE.ino}. Supporting sources: README, requirements, pinout, workbook, previous \texttt{Thesis-original.pdf}.
+\begin{thebibliography}{9}
+\bibitem{radford} A. Radford et al., ``Robust Speech Recognition via Large-Scale Weak Supervision,'' arXiv:2212.04356, 2022. \url{https://arxiv.org/abs/2212.04356}.
+\bibitem{kim} Y. Kim et al., ``A Survey on Integration of Large Language Models with Intelligent Robots,'' arXiv:2404.09228, 2024. \url{https://arxiv.org/abs/2404.09228}.
+\bibitem{ma} Y. Ma, Z. Song, Y. Zhuang, J. Hao, and I. King, ``A Survey on Vision-Language-Action Models for Embodied AI,'' arXiv:2405.14093, 2024. \url{https://arxiv.org/abs/2405.14093}.
+\end{thebibliography}
 \end{document}

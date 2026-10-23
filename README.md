@@ -25,7 +25,9 @@ The transcribed text is sent to Groq for inference. Audio capture and Whisper tr
 - `firmware/ESP32_main/` — an alternate status/discovery sketch. It does **not** implement `/ACT`; it is not the action bridge required by the laptop program.
 - `hardware/amvish-2.0-connections.xlsx` — supplied wiring reference.
 - `hardware/PINOUT.md` — readable pin summary and known differences between the wiring sheet and the current firmware.
-- `thesis/main.tex` — rewritten, source-based thesis describing the implementation, its limitations, and a verification plan. It compiles with the project LaTeX editor; the previous submitted PDF is retained as `Thesis-original.pdf` for reference.
+- `thesis/main.tex` — editable, source-based thesis describing the implementation, its limitations, and a verification plan.
+- `thesis/AmViSH-2.0-Thesis.pdf` — print-ready A4 PDF edition of the thesis.
+- `Thesis-original.pdf` — previous submitted thesis retained for reference.
 
 ## Hardware
 
